@@ -7,4 +7,11 @@ let output = "";
 const calculate = (btnValue) => {
 
     display.focus();
-}    
+}  
+
+buttons.forEach((button) => {
+
+//Button click listener
+ button.addEventListener("click", (e) => calculate(e.target.dataset.value));
+    
+ });
