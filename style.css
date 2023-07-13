@@ -48,9 +48,15 @@
    border: none;
    font-size: 20px;
    cursor: pointer;
-   
    }
    
+.buttons button:active {
+transform: scale(0.99);
+ }
+
+ .operator {
+ color: #742DD2;
+   }
         
 
  
