@@ -19,7 +19,7 @@ justify-content: center;
 max-width: 300px;
 width: 100%;
 border-radius: 19px;
-padding: 30px 20px 10px;
+padding: 36px 20px 13px;
 background:#DEFF8B;
 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
@@ -27,7 +27,7 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     padding-top: 7vh;
 }
 .display {
-height: 90px;
+height: 86px;
 width: 100%;
 outline: none;
 border: none;
@@ -35,7 +35,7 @@ text-align: right;
 margin-bottom: 10px;
 font-size: 25px;
 font-weight: 600;
-color:rgba(145, 141, 141, 0);
+color: black;
 pointer-events: none;
 
 }
@@ -54,7 +54,7 @@ border: none;
 font-size: 25px;
 font-weight: 600;
 cursor: pointer;
-background-color:black ;
+background-color:white;
 
 
 }
@@ -63,6 +63,6 @@ transform: scale(0.99);
 
 }
 .operator {
-color:#742DD2;
+color:#8CBA51;
 
 }
