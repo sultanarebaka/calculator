@@ -1,21 +1,21 @@
 const display = document.querySelector(".display");
+
 const buttons = document.querySelectorAll("button");
 
-const specialCharacters = ["%", "*", "/", "-", "+", "="];
+const specialChars = ["%", "*", "/", "-", "+", "="];
+
 let output = "";
+
+//Define
 
 const calculate = (btnValue) => {
 
-    display.focus();
-}  
+display.focus();
 
-buttons.forEach((button) => {
-
-//Button click listener
- button.addEventListener("click", (e) => calculate(e.target.dataset.value));
-    
- });
 if (btnValue === "=" && output !== "") {
+
+
+
 output = eval(output.replace("%", "/100"));
 
 } else if (btnValue === "AC") {
@@ -24,20 +24,29 @@ output = "";
 
 } else if (btnValue === "DEL") {
 
+// the output.
+
 output = output.toString().slice(0, -1);
 
 } else {
 
-// return
+//return
 
-if (output === "" && specialCharacters.includes(btnValue)) return;
+if (output === "" && specialChars.includes(btnValue)) return;
+
 output += btnValue;
+
 }
+
 display.value = output;
 
+};
 
-// calculate() on click.
+
+
 buttons.forEach((button) => {
+
+
 button.addEventListener("click", (e) => calculate(e.target.dataset.value));
 
 });
